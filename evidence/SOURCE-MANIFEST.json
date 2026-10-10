@@ -1,0 +1,378 @@
+{
+  "snapshot": "gather-local-dialog-ownership-repair-20261010",
+  "date": "2026-10-10",
+  "native_tests_passed": 15,
+  "wasm_integration_checks_passed": 17,
+  "production_source_regression_groups_passed": 61,
+  "alternate_directory_artifact_parity": "isolated repair rebuild byte-identical to accepted WASM",
+  "static_machine_path_scan": "passed",
+  "browser_status": "Local repair browser execution blocked before page creation by Chromium IPC socket() Operation not permitted. Seven new browser checks are prepared and syntax-checked but unexecuted; no browser/AT pass claimed.",
+  "source_tree_sha256": "d76069b6a8c1cb5297e0baf9da91e882a5e9f1edfb8dd39ecd4af926df2efc59",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "e99b15c3de94d9a6a0cc11c19b9b31ec8d5d1b2092fdb7d91b6b34a084cb1a6f",
+      "bytes": 70
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "a21c6c4cb59f9b92364dca022163100842e3a0b2c83e742abd4e709cdd5b6ac6",
+      "bytes": 5090
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "164182a1647f7506acec586961e580343e22edb42b9868ffec50caa32be42ab2",
+      "bytes": 409
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "92126d8796b78d5c6c8111491b9cde1a65f4df1c9671f2a8644ab75dfd303c6f",
+      "bytes": 1076
+    },
+    {
+      "path": "README.md",
+      "sha256": "f30c61f0474eaf18140cb5ff09a59552c09563a2a762e13eed4eea00417cd447",
+      "bytes": 7122
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "sha256": "1ab7d2fb198a36a6cca93d26c2abeaef7be8b354f06100f7e01ed699877608c5",
+      "bytes": 2349
+    },
+    {
+      "path": "licenses/base64-0.22.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847
+    },
+    {
+      "path": "licenses/base64-0.22.1/LICENSE-MIT",
+      "sha256": "0dd882e53de11566d50f8e8e2d5a651bcf3fabee4987d70f306233cf39094ba7",
+      "bytes": 1076
+    },
+    {
+      "path": "licenses/block-buffer-0.10.4/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "bytes": 10849
+    },
+    {
+      "path": "licenses/block-buffer-0.10.4/LICENSE-MIT",
+      "sha256": "d5c22aa3118d240e877ad41c5d9fa232f9c77d757d4aac0c2f943afc0a95e0ef",
+      "bytes": 1082
+    },
+    {
+      "path": "licenses/cfg-if-1.0.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847
+    },
+    {
+      "path": "licenses/cfg-if-1.0.5/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057
+    },
+    {
+      "path": "licenses/cpufeatures-0.2.17/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "bytes": 10849
+    },
+    {
+      "path": "licenses/cpufeatures-0.2.17/LICENSE-MIT",
+      "sha256": "ae9baa7beea910273c2f384c2a6b721fb7bd02bda3436074a1072e4ee689f985",
+      "bytes": 1082
+    },
+    {
+      "path": "licenses/crypto-common-0.1.7/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "bytes": 10849
+    },
+    {
+      "path": "licenses/crypto-common-0.1.7/LICENSE-MIT",
+      "sha256": "3521672491a3479422d5fe1aca6645dd2984090f85da6e5205abfb18fb7a6897",
+      "bytes": 1065
+    },
+    {
+      "path": "licenses/digest-0.10.7/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "bytes": 10849
+    },
+    {
+      "path": "licenses/digest-0.10.7/LICENSE-MIT",
+      "sha256": "9e0dfd2dd4173a530e238cb6adb37aa78c34c6bc7444e0e10c1ab5d8881f63ba",
+      "bytes": 1057
+    },
+    {
+      "path": "licenses/generic-array-0.14.7/LICENSE",
+      "sha256": "c09aae9d3c77b531f56351a9947bc7446511d6b025b3255312d3e3442a9a7583",
+      "bytes": 1107
+    },
+    {
+      "path": "licenses/itoa-1.0.18/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/itoa-1.0.18/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/libc-0.2.190/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/libc-0.2.190/LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e",
+      "bytes": 1066
+    },
+    {
+      "path": "licenses/memchr-2.8.3/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126
+    },
+    {
+      "path": "licenses/memchr-2.8.3/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081
+    },
+    {
+      "path": "licenses/proc-macro2-1.0.107/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/proc-macro2-1.0.107/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/quote-1.0.47/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/quote-1.0.47/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/rust-1.99.0/COPYRIGHT-library.html",
+      "sha256": "5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27",
+      "bytes": 1499465
+    },
+    {
+      "path": "licenses/serde-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/serde-1.0.229/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/serde_core-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/serde_core-1.0.229/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/serde_derive-1.0.229/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/serde_derive-1.0.229/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/serde_json-1.0.151/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/serde_json-1.0.151/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/sha2-0.10.9/LICENSE-APACHE",
+      "sha256": "a9040321c3712d8fd0b09cf52b17445de04a23a10165049ae187cd39e5c86be5",
+      "bytes": 10849
+    },
+    {
+      "path": "licenses/sha2-0.10.9/LICENSE-MIT",
+      "sha256": "b4eb00df6e2a4d22518fcaa6a2b4646f249b3a3c9814509b22bd2091f1392ff1",
+      "bytes": 1138
+    },
+    {
+      "path": "licenses/syn-3.0.6/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/syn-3.0.6/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/typenum-1.20.1/LICENSE",
+      "sha256": "db11fec9946737df39ca3898d9cd8c10ec6f6c3a884a6802b0ad0b81b4e8f23a",
+      "bytes": 17
+    },
+    {
+      "path": "licenses/typenum-1.20.1/LICENSE-APACHE",
+      "sha256": "516b24e051bf5630880ebbd55c40a25ce9552ebaf8970a53e8976eb70e522406",
+      "bytes": 10835
+    },
+    {
+      "path": "licenses/typenum-1.20.1/LICENSE-MIT",
+      "sha256": "a825bd853ab71619a4923d7b4311221427848070ff44d990da39b0b274c1683f",
+      "bytes": 1083
+    },
+    {
+      "path": "licenses/unicode-ident-1.0.26/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723
+    },
+    {
+      "path": "licenses/unicode-ident-1.0.26/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "licenses/unicode-ident-1.0.26/LICENSE-UNICODE",
+      "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "bytes": 1995
+    },
+    {
+      "path": "licenses/version_check-0.9.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847
+    },
+    {
+      "path": "licenses/version_check-0.9.5/LICENSE-MIT",
+      "sha256": "b7e650f3fce5c53249d1cdc608b54df156a97edd636cf9d23498d0cfe7aec63e",
+      "bytes": 1085
+    },
+    {
+      "path": "licenses/zmij-1.0.23/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "ad2aae24f3d40e29c8d1cf943affdc23afe058e45fe0f6783ba9f35c53251972",
+      "bytes": 197
+    },
+    {
+      "path": "package.json",
+      "sha256": "415d77fc2a2e098c375cbccf60ce2a2d77f5762933bd87ca80ecfc45f2ef891e",
+      "bytes": 154
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "sha256": "f85f74c3f9bf13cfb68855f5e125bbd206d6e07440f7d3145a5872ad14e2bdb2",
+      "bytes": 123
+    },
+    {
+      "path": "scripts/build.sh",
+      "sha256": "6e98eebc672ddf25215277db2c140c950535138e5d95cfbe57b3783bc04e2f96",
+      "bytes": 517
+    },
+    {
+      "path": "scripts/verify-build.mjs",
+      "sha256": "73d516d5432240e6751533d49d5c616f3293ce6416c0c30a346fd455eac14f3a",
+      "bytes": 1693
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "b7cd1ad7c5b68f51e13604afedacab09160899a062f5297d9ee0124b38450b60",
+      "bytes": 25157
+    },
+    {
+      "path": "tests/browser.cjs",
+      "sha256": "091bac75f5e7d7aa9707e8278f805744e27ae74e53ce4473addf84d7dfabc9d4",
+      "bytes": 11510
+    },
+    {
+      "path": "tests/dialog-browser.cjs",
+      "sha256": "0486a204340812e58e769437086d9a965ae43397d7be8560d590f936517cd7fe",
+      "bytes": 7930
+    },
+    {
+      "path": "tests/dialog-regressions.cjs",
+      "sha256": "9ce7e912f48e70631afacde843d400b7be54893b6833295ce3008a934dcd6fc0",
+      "bytes": 14795
+    },
+    {
+      "path": "tests/dom-regressions.cjs",
+      "sha256": "6d53a69ddf42797a82910436129a11ae0ffa34c1eb8ba0cdd47c32943fbf71f8",
+      "bytes": 9421
+    },
+    {
+      "path": "tests/package-lock.json",
+      "sha256": "f0eb25e854cc72aab6e7dcbcdbd56bbc1c33d80cf1fccbe9b084ca9f97655c04",
+      "bytes": 1751
+    },
+    {
+      "path": "tests/package.json",
+      "sha256": "ffc14c35c05d96e0317e5ee3e2ce2cdd359111b5c2d3a8bc846674c25fa4916f",
+      "bytes": 176
+    },
+    {
+      "path": "tests/wasm.cjs",
+      "sha256": "27d71423bede536c2fb9e9b7541d269db1a82ef6ae88d56ba1d6033e52a0a6c7",
+      "bytes": 4485
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "6a34debc5fe9c70e1f608e0cfd49f732f831979a58cc51decc80a70d17195d8d",
+      "bytes": 929
+    },
+    {
+      "path": "web/RUST-STANDARD-LIBRARY-NOTICES.html",
+      "sha256": "5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27",
+      "bytes": 1499465
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "ca43e6ef7987941c900d4f1b55a10d21a1bf6ca2cfbf8aba595b0a4cfe953502",
+      "bytes": 35859
+    },
+    {
+      "path": "web/favicon.svg",
+      "sha256": "a6ad604d117b1ca1abdad0143f2031fc879af8eeeceda23e1654a92425c6696d",
+      "bytes": 207
+    },
+    {
+      "path": "web/gather_core.wasm",
+      "sha256": "84d413495164c96f71af2b269d5a232d79dd7c97d9c17218ea828e53fcf6c706",
+      "bytes": 264933
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "df7c1d54f085bb660bd8e31f19159f11d23021e3f6d7e6b5fe6c3c2efcdf78fa",
+      "bytes": 1270
+    },
+    {
+      "path": "web/styles.css",
+      "sha256": "e00abffabc61ad598694d983f1603070d4161061b2bb3591c332aaf3fdebcc59",
+      "bytes": 17620
+    },
+    {
+      "path": "web/third-party-licenses.txt",
+      "sha256": "43da25dcfb59013e559fc2fe33b0518d6a8ae36d9e84f244ce28e957f336244b",
+      "bytes": 229881
+    }
+  ],
+  "source_tree_sha256_method": "SHA-256 of the exact UTF-8 bytes in evidence/SOURCE-SHA256SUMS.txt",
+  "dialog_regression_checks_passed": 46,
+  "dialog_baseline_negative_control_failures": 31,
+  "base_commit": "41e44e29c860cba7654376fe84f4db59faea5eed",
+  "base_git_tree": "f7596fdd082f2281bd11be3693bb6f7a2f89bb56"
+}

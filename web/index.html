@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183b32">
+  <meta name="description" content="Gather: a browser-local asset collection demo. Request, review, refine and export a complete project packet.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; connect-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Gather · Project assets, together.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to project assets</a>
+  <div id="app"><div class="boot" role="status"><span class="boot-mark">g.</span><h1>Opening your workspace</h1><p>Starting the local Rust engine…</p></div></div>
+  <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="modal" aria-labelledby="dialog-title"></dialog>
+  <noscript>Gather needs JavaScript and WebAssembly to run its local Rust engine. No files are uploaded.</noscript>
+</body>
+</html>

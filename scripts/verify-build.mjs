@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const required=['index.html','app.js','styles.css','gather_core.wasm','favicon.svg','third-party-licenses.txt','RUST-STANDARD-LIBRARY-NOTICES.html'];
+for(const file of required)if(!fs.existsSync(`web/${file}`))throw Error(`Missing ${file}; run scripts/build.sh with Rust and wasm32 installed.`);
+const standardNotice=fs.readFileSync('web/RUST-STANDARD-LIBRARY-NOTICES.html');
+if(createHash('sha256').update(standardNotice).digest('hex')!=='5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27')throw Error('Pinned Rust standard-library notice is missing or changed.');
+if(!standardNotice.equals(fs.readFileSync('licenses/rust-1.99.0/COPYRIGHT-library.html')))throw Error('Rust standard-library source/distribution notices differ.');
+const wasm=fs.readFileSync('web/gather_core.wasm');
+if(/\/(?:workspace|home|Users|tmp|private\/tmp)\//.test(wasm.toString('latin1')))throw Error('WASM contains an absolute machine-specific path; rebuild with scripts/build.sh.');
+if(!WebAssembly.validate(wasm))throw Error('Invalid WASM artifact');
+const {instance}=await WebAssembly.instantiate(wasm,{}),w=instance.exports;
+const b=new TextEncoder().encode(JSON.stringify({state:null,expected_revision:null,command:{op:'sample'}}));
+const ptr=w.input_buffer(b.length);
+new Uint8Array(w.memory.buffer,ptr,b.length).set(b);w.execute_request();
+const r=JSON.parse(new TextDecoder().decode(new Uint8Array(w.memory.buffer,w.output_buffer(),w.output_len())));
+if(!r.ok||r.data.state.items.length!==5)throw Error('WASM smoke failed');
+console.log(`Gather static build verified: ${wasm.length} byte Rust WASM; synthetic workflow loaded.`);

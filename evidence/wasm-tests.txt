@@ -1,0 +1,18 @@
+PASS sample passes real WASM validation
+PASS sample has exact native oracle statuses
+PASS partial export has only two accepted byte-verified files
+PASS stale revision fails
+PASS missing feedback fails
+PASS accepted file replacement fails
+PASS nonexistent item fails
+PASS accept succeeds only once
+PASS revision invalidates acceptance
+PASS resubmission increments version and rejects prior review
+PASS malformed dangerous names and bytes fail
+PASS tampered manifest is rejected
+PASS unknown request fields rejected
+PASS 2 MiB boundary and aggregate limits through WASM
+PASS oversized ABI rejects allocation and cannot replay prior input
+PASS subsequent small request survives memory growth
+PASS bounded malformed UTF8 inputs never trap
+17 WASM integration checks passed.
