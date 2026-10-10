@@ -1,13 +1,13 @@
 {
-  "snapshot": "gather-review-freeze-4-nested-focus",
-  "date": "2026-10-09",
+  "snapshot": "gather-publication-5-download-test-cooldown",
+  "date": "2026-10-10",
   "native_tests_passed": 15,
   "wasm_integration_checks_passed": 17,
   "production_source_regression_groups_passed": 15,
   "alternate_directory_artifact_parity": "byte-identical",
   "static_machine_path_scan": "passed",
-  "browser_status": "Not run: supported browser route pending; no browser/screen-reader/mobile performance pass claimed.",
-  "source_tree_sha256": "206d93d2a70b1e62c2959a72f620edc52704e17c48bf2652094d9c2f183fca39",
+  "browser_status": "Publication candidate browser suite: exact-head GitHub Actions is authoritative. Test synchronization now respects the intentional 750 ms download cooldown. No screen-reader or physical-mobile performance pass is claimed.",
+  "source_tree_sha256": "3ce112d3119c31f49f83698ce01066df07b8dcf280acdc3a769464536664fc0a",
   "files": [
     {
       "path": ".gitignore",
@@ -296,8 +296,8 @@
     },
     {
       "path": "tests/browser.cjs",
-      "sha256": "b8aece9ccfa5cc671b73237da649dd1216ef164963e99e07c35cee2d36087b3f",
-      "bytes": 10930
+      "sha256": "a62b560b23525897842363c4ba55722773779b5bafdfb42fdda1ce665929b383",
+      "bytes": 11320
     },
     {
       "path": "tests/dom-regressions.cjs",
@@ -359,5 +359,6 @@
       "sha256": "43da25dcfb59013e559fc2fe33b0518d6a8ae36d9e84f244ce28e957f336244b",
       "bytes": 229881
     }
-  ]
+  ],
+  "source_tree_sha256_method": "SHA-256 of the exact UTF-8 bytes in evidence/SOURCE-SHA256SUMS.txt"
 }
