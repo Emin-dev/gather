@@ -1,0 +1,7 @@
+{
+  "name": "gather-browser-checks",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": { "browser": "node browser.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}

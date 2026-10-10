@@ -1,0 +1,17 @@
+PASS ARIA boolean state serialized as true/false; HTML disabled remains boolean
+PASS pending valid file cannot win after invalid 0-byte replacement
+PASS pending valid file cannot win after invalid 2097153-byte replacement
+PASS only the newest valid read wins out of order
+PASS older failed read cannot clear newer selected file or error
+PASS cancelled dialog ignores late success and failure
+PASS empty file-list replacement invalidates current read
+PASS current read failure disables submission and exposes its error
+PASS focus restoration selects visible replacement or deliberate heading
+PASS dialog close cancels pending work and restores captured opener
+Authored text contrast: 5.409:1
+PASS changes-requested text meets 4.5:1 authored contrast
+PASS one live download URL and timer across 100 spaced requests
+PASS burst download requests allocate only one blob URL
+PASS overlapping export requests perform one read and one core export
+PASS revision Cancel rebuilds review before focusing its new action, with heading fallback
+15 production-source DOM/async regression checks passed. Not a browser test.
