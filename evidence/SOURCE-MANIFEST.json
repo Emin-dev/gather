@@ -1,13 +1,13 @@
 {
-  "snapshot": "gather-publication-5-download-test-cooldown",
+  "snapshot": "gather-local-dialog-ownership-repair-20261010",
   "date": "2026-10-10",
   "native_tests_passed": 15,
   "wasm_integration_checks_passed": 17,
-  "production_source_regression_groups_passed": 15,
-  "alternate_directory_artifact_parity": "byte-identical",
+  "production_source_regression_groups_passed": 61,
+  "alternate_directory_artifact_parity": "isolated repair rebuild byte-identical to accepted WASM",
   "static_machine_path_scan": "passed",
-  "browser_status": "Publication candidate browser suite: exact-head GitHub Actions is authoritative. Test synchronization now respects the intentional 750 ms download cooldown. No screen-reader or physical-mobile performance pass is claimed.",
-  "source_tree_sha256": "3ce112d3119c31f49f83698ce01066df07b8dcf280acdc3a769464536664fc0a",
+  "browser_status": "Local repair browser execution blocked before page creation by Chromium IPC socket() Operation not permitted. Seven new browser checks are prepared and syntax-checked but unexecuted; no browser/AT pass claimed.",
+  "source_tree_sha256": "d76069b6a8c1cb5297e0baf9da91e882a5e9f1edfb8dd39ecd4af926df2efc59",
   "files": [
     {
       "path": ".gitignore",
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "bae10fb076d639691057961db99e8a62125bcd8b3daf081c50fd0e6736d6b5b5",
-      "bytes": 6742
+      "sha256": "f30c61f0474eaf18140cb5ff09a59552c09563a2a762e13eed4eea00417cd447",
+      "bytes": 7122
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -296,13 +296,23 @@
     },
     {
       "path": "tests/browser.cjs",
-      "sha256": "a62b560b23525897842363c4ba55722773779b5bafdfb42fdda1ce665929b383",
-      "bytes": 11320
+      "sha256": "091bac75f5e7d7aa9707e8278f805744e27ae74e53ce4473addf84d7dfabc9d4",
+      "bytes": 11510
+    },
+    {
+      "path": "tests/dialog-browser.cjs",
+      "sha256": "0486a204340812e58e769437086d9a965ae43397d7be8560d590f936517cd7fe",
+      "bytes": 7930
+    },
+    {
+      "path": "tests/dialog-regressions.cjs",
+      "sha256": "9ce7e912f48e70631afacde843d400b7be54893b6833295ce3008a934dcd6fc0",
+      "bytes": 14795
     },
     {
       "path": "tests/dom-regressions.cjs",
-      "sha256": "8c34555509ac40ca56354d5f748e836af23e4945aeaee251e890ab8f4d9f3a63",
-      "bytes": 9375
+      "sha256": "6d53a69ddf42797a82910436129a11ae0ffa34c1eb8ba0cdd47c32943fbf71f8",
+      "bytes": 9421
     },
     {
       "path": "tests/package-lock.json",
@@ -331,8 +341,8 @@
     },
     {
       "path": "web/app.js",
-      "sha256": "ebf335c386731ead2864620616f998f014a64d6c2d6999194b8d1fc60790078c",
-      "bytes": 35027
+      "sha256": "ca43e6ef7987941c900d4f1b55a10d21a1bf6ca2cfbf8aba595b0a4cfe953502",
+      "bytes": 35859
     },
     {
       "path": "web/favicon.svg",
@@ -360,5 +370,9 @@
       "bytes": 229881
     }
   ],
-  "source_tree_sha256_method": "SHA-256 of the exact UTF-8 bytes in evidence/SOURCE-SHA256SUMS.txt"
+  "source_tree_sha256_method": "SHA-256 of the exact UTF-8 bytes in evidence/SOURCE-SHA256SUMS.txt",
+  "dialog_regression_checks_passed": 46,
+  "dialog_baseline_negative_control_failures": 31,
+  "base_commit": "41e44e29c860cba7654376fe84f4db59faea5eed",
+  "base_git_tree": "f7596fdd082f2281bd11be3693bb6f7a2f89bb56"
 }

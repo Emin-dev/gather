@@ -58,6 +58,8 @@ GATHER_URL=http://127.0.0.1:4171 node tests/browser.cjs
 
 Browser tests use Playwright 1.62.1 pinned in tests/package.json and tests/package-lock.json. They can connect to an authorized supported browser with BROWSER_CDP_URL; otherwise CHROMIUM_PATH overrides the pinned Playwright browser executable. Test dependencies are separate from production: Vercel explicitly skips dependency installation, sets framework to null, and only executes the no-dependency static verifier. Never treat an unexecuted browser suite as a UI pass.
 
+The source regression command includes deferred-save/dialog-ownership and label-in-name checks. The real-browser suite also gates native IndexedDB completion to test interrupted saves against new dialogs. These source-shim checks and browser checks are separate evidence; see [the local dialog repair verification](evidence/UI-DIALOG-REPAIR.md) for the current execution limits.
+
 ## Deployment
 
 `vercel.json` serves `web` as a static demo and sets security headers. `node scripts/verify-build.mjs` checks the included Rust WASM at build time. No paid database, token, secret, serverless upload endpoint or external integration is needed. Publication is coordinated separately after review; this source folder does not claim a live deployment.
